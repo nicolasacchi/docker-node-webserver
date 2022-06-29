@@ -12,5 +12,11 @@ pipeline {
       }
     }
 
+    stage('deploy') {
+      steps {
+        sh 'aws s3 ls'
+      }
+    }
+
   }
 }
